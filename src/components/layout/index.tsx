@@ -1,5 +1,5 @@
 import React from 'react';
-// import NavBar from '../navbar';
+import NavBar from '../navbar';
 import {
   Switch,
   Route,
@@ -9,7 +9,7 @@ import HomeScreen from '../../screens/HomeScreen';
 const Layout = () => {
   return(
     <div>
-      {/* <NavBar/> */}
+      <NavBar/>
       <Switch>
         <Route
           path='/'

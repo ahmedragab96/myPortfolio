@@ -5,13 +5,13 @@ import {
 export const darkTheme = new Theme({
   palette: {
       primary: {
-          value: '#FFCC00',
+          value: 'white',
           contrast: '#141414',
           disabledValue: '#ACACAC',
           disabledContrast: '#141414',
       },
       secondary: {
-          value: '#141414',
+          value: '#3BC2ED',
           contrast: 'white',
           disabledValue: '#141414',
           disabledContrast: '#ACACAC',
@@ -23,13 +23,13 @@ export const darkTheme = new Theme({
           value: '#EB5757',
       },
       background: {
-          value: '#141414',
+          value: '#343236',
           contrast: 'white',
           disabledValue: '#141414',
           disabledContrast: 'white',
       },
       surface: {
-          value: 'white',
+          value: '#343236',
           contrast: '#141414',
           disabledValue: 'white',
           disabledContrast: '#141414',

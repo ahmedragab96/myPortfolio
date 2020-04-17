@@ -5,7 +5,7 @@ import {
 export const lightTheme = new Theme({
   palette: {
       primary: {
-          value: '#FFCC00',
+          value: 'black',
           contrast: '#141414',
           disabledValue: '#ACACAC',
           disabledContrast: '#141414',
@@ -29,8 +29,8 @@ export const lightTheme = new Theme({
           disabledContrast: 'white',
       },
       surface: {
-          value: 'white',
-          contrast: '#141414',
+          value: '#CEF3FF',
+          contrast: '#89E3FF',
           disabledValue: 'white',
           disabledContrast: '#141414',
       },

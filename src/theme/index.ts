@@ -1,6 +1,5 @@
 import { ThemePalette } from './palette';
 import { RecursivePartialNonMethod } from './utils/types';
-import deepMerge from 'lodash.merge';
 
 export class Theme {
   palette = new ThemePalette();
