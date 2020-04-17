@@ -17,7 +17,7 @@ export const lightTheme = new Theme({
           disabledContrast: '#ACACAC',
       },
       common: {
-          link: '#189DE8',
+          black: 'white',
       },
       error: {
           value: '#EB5757',

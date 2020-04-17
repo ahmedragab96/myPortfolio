@@ -17,7 +17,7 @@ export const darkTheme = new Theme({
           disabledContrast: '#ACACAC',
       },
       common: {
-          link: '#189DE8',
+          black: '#575757',
       },
       error: {
           value: '#EB5757',
@@ -30,7 +30,7 @@ export const darkTheme = new Theme({
       },
       surface: {
           value: '#343236',
-          contrast: '#141414',
+          contrast: '#343236',
           disabledValue: 'white',
           disabledContrast: '#141414',
       },

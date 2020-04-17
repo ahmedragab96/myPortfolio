@@ -4,6 +4,7 @@ interface ImagesInterface {
   technologyTools: string;
   lightToggler: string;
   darkToggler: string;
+  profileImage: string;
 }
 
 export const images: ImagesInterface = {
@@ -12,4 +13,5 @@ export const images: ImagesInterface = {
   technologyTools: require('../assets/images/technologyTools.png'),
   lightToggler: require('../assets/images/lightToggler.png'),
   darkToggler: require('../assets/images/darkToggler.png'),
+  profileImage: require('../assets/images/profilePicture.png'),
 };
