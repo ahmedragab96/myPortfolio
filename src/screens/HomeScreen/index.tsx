@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../theme/themeContext';
 import styles from './styles.module.scss';
 import { images } from '../../assets';
-import Gallery from '../../components/imageSlider';
+// import Gallery from '../../components/imageSlider';
+import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import FlipCard from '../../components/flippingCard';
 
 const HomeScreen = () => {
   const {
@@ -92,7 +94,7 @@ const HomeScreen = () => {
       <div
         className={styles.collaborateSction}
         style={{
-          backgroundColor: theme.palette.surface.value
+          backgroundColor: theme.palette.surface.value,
         }}
       >
       <p
@@ -120,6 +122,28 @@ const HomeScreen = () => {
             Start Conversation
           </p>
         </div>
+          <div
+            style={{
+              width: '90%',
+              display: 'flex',
+              justifyContent: 'center'
+            }}
+          >
+            <FlipCard/>
+            <FlipCard/>
+            <FlipCard/>
+          </div>
+          <div
+            style={{
+              width: '90%',
+              display: 'flex',
+              justifyContent: 'center'
+            }}
+          >
+            <FlipCard/>
+            <FlipCard/>
+            <FlipCard/>
+          </div>
       </div>
     </div>
   );

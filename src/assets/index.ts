@@ -5,6 +5,8 @@ interface ImagesInterface {
   lightToggler: string;
   darkToggler: string;
   profileImage: string;
+  wadideglaLogo: string;
+  wadideglaBack: string;
 }
 
 export const images: ImagesInterface = {
@@ -14,4 +16,7 @@ export const images: ImagesInterface = {
   lightToggler: require('../assets/images/lightToggler.png'),
   darkToggler: require('../assets/images/darkToggler.png'),
   profileImage: require('../assets/images/profilePicture.png'),
+  wadideglaLogo: require('../assets/images/wadideglaLogo.png'),
+  wadideglaBack: require('../assets/images/wadideglaBack.png'),
+
 };
