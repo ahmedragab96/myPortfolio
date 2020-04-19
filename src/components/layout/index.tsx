@@ -16,7 +16,7 @@ const Layout = () => {
       <NavBar/>
       <div
        style={{
-         backgroundColor: theme.palette.common.black
+         backgroundColor: theme.palette.common.black,
        }}
       >
       <Switch>

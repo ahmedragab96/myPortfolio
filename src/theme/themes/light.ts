@@ -11,8 +11,8 @@ export const lightTheme = new Theme({
           disabledContrast: '#141414',
       },
       secondary: {
-          value: '#141414',
-          contrast: 'white',
+          value: '#3BC2ED',
+          contrast: '#3BC2ED',
           disabledValue: '#141414',
           disabledContrast: '#ACACAC',
       },

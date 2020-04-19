@@ -37,6 +37,20 @@ const NavBar = () => {
         >
           My Resume
         </p>
+        <div
+          className={styles.helloButton}
+          style={{
+            borderColor: theme.palette.secondary.contrast
+          }}
+        >
+          <p
+            style={{
+              color: theme.palette.secondary.contrast
+            }}
+          >
+            Say Hello
+          </p>
+        </div>
         <img
           src={ theme === lightTheme ? images.lightToggler : images.darkToggler}
           alt={'logo'}
