@@ -3,8 +3,7 @@ import { ThemeContext } from '../../theme/themeContext';
 import styles from './styles.module.scss';
 import { images } from '../../assets';
 // import Gallery from '../../components/imageSlider';
-import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import FlipCard from '../../components/flippingCard';
+import ProjectsComponent from '../../components/ProjectsComponent';
 
 const HomeScreen = () => {
   const {
@@ -122,29 +121,16 @@ const HomeScreen = () => {
             Start Conversation
           </p>
         </div>
-          <div
-            style={{
-              width: '90%',
-              display: 'flex',
-              justifyContent: 'center'
-            }}
-          >
-            <FlipCard/>
-            <FlipCard/>
-            <FlipCard/>
-          </div>
-          <div
-            style={{
-              width: '90%',
-              display: 'flex',
-              justifyContent: 'center'
-            }}
-          >
-            <FlipCard/>
-            <FlipCard/>
-            <FlipCard/>
-          </div>
       </div>
+      <div
+            style={{
+              width: '90%',
+              display: 'flex',
+              justifyContent: 'center'
+            }}
+          >
+            <ProjectsComponent/>
+          </div>
     </div>
   );
 }
