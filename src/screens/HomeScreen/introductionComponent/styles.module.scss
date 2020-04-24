@@ -1,0 +1,20 @@
+.introductionSction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+}
+
+.nameText {
+  margin: 40px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.introText {
+  margin: 0 20px 20px 20px; 
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}

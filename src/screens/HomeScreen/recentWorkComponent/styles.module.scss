@@ -1,0 +1,22 @@
+.recentWorkSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  padding: 4% 2% 5% 2%;
+}
+
+.emailMeText {
+  color: blueviolet,
+}
+
+.emailMeText:hover {
+  cursor: pointer;
+}
+
+.recentWorkCardsContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
