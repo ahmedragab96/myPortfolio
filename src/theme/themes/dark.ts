@@ -13,7 +13,7 @@ export const darkTheme = new Theme({
       secondary: {
           value: '#3BC2ED',
           contrast: 'white',
-          disabledValue: '#141414',
+          disabledValue: '#575757',
           disabledContrast: '#ACACAC',
       },
       common: {

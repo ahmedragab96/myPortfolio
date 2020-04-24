@@ -4,6 +4,7 @@ import styles from './styles.module.scss';
 import { images } from '../../assets';
 // import Gallery from '../../components/imageSlider';
 import ProjectsComponent from '../../components/ProjectsComponent';
+import Footer from '../../components/foorter';
 
 const HomeScreen = () => {
   const {
@@ -114,23 +115,61 @@ const HomeScreen = () => {
         </p>
         <div
           className={styles.collaborateAction}
+          style={{
+            backgroundColor: '#3BC2ED'
+          }}
         >
           <p
             className={styles.actionText}
+            style={{
+              color: theme.palette.background.value
+            }}
           >
             Start Conversation
           </p>
         </div>
       </div>
       <div
-            style={{
-              width: '90%',
-              display: 'flex',
-              justifyContent: 'center'
-            }}
-          >
-            <ProjectsComponent/>
-          </div>
+        className={styles.recentWorkSection}
+      >
+        <h1
+          style={{
+            color: theme.palette.primary.value
+          }}
+        >
+          My Recent Work
+        </h1>
+        <p
+          style={{
+            color: theme.palette.primary.value,
+            fontSize: 14
+          }}
+        >
+          Here are a few recent design projects. Want to see more? 
+          <span 
+          className={styles.emailMeText}
+          > Email me. </span>  
+        </p>
+        <div
+         className={styles.recentWorkCardsContainer}
+        >
+          <ProjectsComponent/>
+        </div>
+      </div>
+      <div
+        className={styles.TestimonialsScetion}
+        style={{
+          backgroundColor: theme.palette.background.value
+        }}
+      >
+        <p>
+          Testimonials
+        </p>
+        <p>
+          People I've worked with have said some nice things...   
+        </p>
+      </div>
+      <Footer/>
     </div>
   );
 }

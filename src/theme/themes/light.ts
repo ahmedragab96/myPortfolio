@@ -13,7 +13,7 @@ export const lightTheme = new Theme({
       secondary: {
           value: '#3BC2ED',
           contrast: '#3BC2ED',
-          disabledValue: '#141414',
+          disabledValue: '#3BC2ED',
           disabledContrast: '#ACACAC',
       },
       common: {
