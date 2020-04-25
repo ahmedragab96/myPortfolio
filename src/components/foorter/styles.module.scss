@@ -1,12 +1,53 @@
 .footerContainer {
-  height: 5vh;
+  height: 28vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 4% 0 4% 0;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
   width: 75px;
   height: 25px;
+  margin-bottom: 20px;
+}
+
+.footerText {
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.socialMediaContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialIconsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+
+}
+
+.cerditsText {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.creditsLogo {
+  margin: 5px 5px 0px 5px;
 }

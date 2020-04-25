@@ -1,3 +1,11 @@
+import LinkedIn from './images/linkedIn';
+import Github from './images/github';
+import Email from './images/email';
+import Twitter from './images/twitter';
+import Pintrest from './images/pintrest';
+import Credits from './images/credits';
+
+
 interface ImagesInterface {
   lightLogo: string;
   darkLogo: string;
@@ -7,6 +15,12 @@ interface ImagesInterface {
   profileImage: string;
   wadideglaLogo: string;
   wadideglaBack: string;
+  linkedIn: JSX.Element;
+  github: JSX.Element;
+  email: JSX.Element;
+  twitter: JSX.Element;
+  pintrest: JSX.Element;
+  credits: JSX.Element;
 }
 
 export const images: ImagesInterface = {
@@ -18,5 +32,10 @@ export const images: ImagesInterface = {
   profileImage: require('../assets/images/profilePicture.png'),
   wadideglaLogo: require('../assets/images/wadideglaLogo.png'),
   wadideglaBack: require('../assets/images/wadideglaBack.png'),
-
+  linkedIn: LinkedIn,
+  github: Github,
+  email: Email,
+  twitter: Twitter,
+  pintrest: Pintrest,
+  credits: Credits,
 };
