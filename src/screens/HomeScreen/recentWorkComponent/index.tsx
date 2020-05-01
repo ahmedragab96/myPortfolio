@@ -14,7 +14,8 @@ const RecentWorkComponent: React.FC = () => {
     >
       <h1
         style={{
-          color: theme.palette.primary.value
+          color: theme.palette.primary.value,
+          marginBottom: 20,
         }}
       >
         My Recent Work

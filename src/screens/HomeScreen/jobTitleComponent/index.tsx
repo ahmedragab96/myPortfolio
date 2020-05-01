@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../../theme/themeContext';
 import styles from './styles.module.scss';
 import { images } from '../../../assets';
-import {Animated} from "react-animated-css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const JobTitleComponent: React.FC = () => {
   const {
@@ -10,15 +10,9 @@ const JobTitleComponent: React.FC = () => {
   } = useContext(ThemeContext);
   return (
     <div
-        className={styles.jobTitleContainer}
-      >
-        <Animated
-          animationIn="bounce"
-          animationOut="fadeOut"
-          animationInDuration={1000}
-          animationOutDuration={1000}
-          isVisible={true}
-        >
+      className={styles.jobTitleContainer}
+    >
+      <ScrollAnimation animateIn="bounce">
         <p
           className={styles.jobHeader}
           style={{
@@ -27,14 +21,8 @@ const JobTitleComponent: React.FC = () => {
         >
           Full-Stack Developer
         </p>
-        </Animated>
-        <Animated
-          animationIn="fadeInLeftBig"
-          animationOut="fadeOut"
-          animationInDuration={1000}
-          animationOutDuration={1000}
-          isVisible={true}
-        >
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight">
         <p
           className={styles.jobdesc}
           style={{
@@ -43,31 +31,28 @@ const JobTitleComponent: React.FC = () => {
         >
           I code beautifully simple things, and I love what I do.
         </p>
-        </Animated>
-        <img
-          src={images.profileImage}
-          className={styles.profileImg}
-          alt={'profile'}
-        />
-        <Animated
-          animationIn="fadeIn"
-          animationOut="fadeOut"
-          animationInDuration={3000}
-          animationOutDuration={1000}
-          isVisible={true}
-          style={{
-            display: 'flex',
-            justifyContent: 'center'
-          }}
-        >
+      </ScrollAnimation>
+      <img
+        src={images.profileImage}
+        className={styles.profileImg}
+        alt={'profile'}
+      />
+      <ScrollAnimation
+        animateIn="zoomIn"
+        style={{
+          display: 'flex',
+          justifyContent: 'center'
+        }}
+        animateOnce
+      >
         <img
           src={images.technologyTools}
           className={styles.technologyImage}
           alt={'technology'}
         />
-        </Animated>
-      </div>
+      </ScrollAnimation>
+    </div>
   );
-} 
+}
 
 export default JobTitleComponent;

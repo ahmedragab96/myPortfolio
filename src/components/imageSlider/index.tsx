@@ -1,63 +1,47 @@
 import React from 'react'
-import AliceCarousel from 'react-alice-carousel'
-import 'react-alice-carousel/lib/alice-carousel.css'
-import { images } from '../../assets'
+import ReactCardCarousel from 'react-card-carousel';
+import { images } from '../../assets';
+import styles from './styles.module.scss';
  
 class Gallery extends React.Component {
-  state = {
-    currentIndex: 0,
-    itemsInSlide: 1,
-    responsive: { 0: { items: 3 } },
-    galleryItems: this.galleryItems(),
+
+  static get CARD_STYLE() {
+    return {
+      height: '200px',
+      width: '200px',
+      paddingTop: '80px',
+      textAlign: 'center',
+      background: '#52C0F5',
+      color: '#FFF',
+      fontSize: '12px',
+      textTransform: 'uppercase',
+      borderRadius: '10px',
+    };
   }
- 
-  galleryItems() {
-    return Array(7)
-      .fill(7, 0, 7)
-      .map((item: any, i: any) => <img alt='img' src={images.darkLogo} style={{ margin: 20, width: 20, height: 20}}/>)
-  }
- 
-  slidePrevPage = () => {
-    const currentIndex = this.state.currentIndex - this.state.itemsInSlide
-    this.setState({ currentIndex })
-  }
- 
-  slideNextPage = () => {
-    const {
-      itemsInSlide,
-      galleryItems: { length },
-    } = this.state
-    let currentIndex = this.state.currentIndex + itemsInSlide
-    if (currentIndex > length) currentIndex = length
- 
-    this.setState({ currentIndex })
-  }
- 
-  handleOnSlideChange = (event: any) => {
-    const { itemsInSlide, item } = event
-    this.setState({ itemsInSlide, currentIndex: item })
-  }
+
  
   render() {
-    const { currentIndex, galleryItems, responsive } = this.state
+
  
     return (
       <div>
-        <AliceCarousel
-          items={galleryItems}
-          slideToIndex={currentIndex}
-          responsive={responsive}
-          onInitialized={this.handleOnSlideChange}
-          onSlideChanged={this.handleOnSlideChange}
-          onResized={this.handleOnSlideChange}
-          dotsDisabled={true}
-          stagePadding={{
-            paddingLeft: 20,
-            paddingRight: 20
-          }}
-        />
-        <button onClick={this.slidePrevPage}>Prev Page</button>
-        <button onClick={this.slideNextPage}>Next Page</button>
+        <ReactCardCarousel autoplay={ true } autoplay_speed={ 2500 }>
+          <div className={styles.imageConatiner}>
+            First Card
+          </div>
+          <div className={styles.imageConatiner}>
+            Second Card
+          </div>
+          <div className={styles.imageConatiner}>
+            Third Card
+          </div>
+          <div className={styles.imageConatiner}>
+            Fourth Card
+          </div>
+          <div className={styles.imageConatiner}>
+            Fifth Card
+          </div>
+      </ReactCardCarousel>
       </div>
     )
   }

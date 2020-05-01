@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../../theme/themeContext';
 import styles from './styles.module.scss';
 import { images } from '../../../assets';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const CollaborateComponent: React.FC = () => {
   const {
@@ -14,6 +15,7 @@ const CollaborateComponent: React.FC = () => {
         backgroundColor: theme.palette.surface.value,
       }}
     >
+      <ScrollAnimation animateIn="fadeInDown" duration={2}>
       <p
         className={styles.collaborateHeader}
         style={{
@@ -22,6 +24,8 @@ const CollaborateComponent: React.FC = () => {
       >
         Interested in collaborating or investing?
       </p>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInUp" duration={2}>
       <p
         className={styles.collaborateDesc}
         style={{
@@ -30,6 +34,7 @@ const CollaborateComponent: React.FC = () => {
       >
         I’m always open to discussing product design work or partnership opportunities.
       </p>
+      </ScrollAnimation>
       <div
         className={styles.collaborateAction}
         style={{

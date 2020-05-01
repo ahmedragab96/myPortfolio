@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../theme/themeContext';
 import styles from './styles.module.scss';
 import { images } from '../../assets';
+import { Animated } from 'react-animated-css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Footer: React.FC = () => {
   const {
@@ -28,6 +30,11 @@ const Footer: React.FC = () => {
           Living, learning, & leveling up one day at a time.
         </p>
       </div>
+      <ScrollAnimation
+        animateIn="fadeInUp"
+        // animateOut="fadeInDown"
+        // animateOnce
+      >
       <div
        className={styles.socialMediaContainer}
       >
@@ -74,6 +81,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+        </ScrollAnimation>
     </div>
   );
 }

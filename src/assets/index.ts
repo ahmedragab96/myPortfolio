@@ -15,6 +15,7 @@ interface ImagesInterface {
   profileImage: string;
   wadideglaLogo: string;
   wadideglaBack: string;
+  nodeLogo: string;
   linkedIn: JSX.Element;
   github: JSX.Element;
   email: JSX.Element;
@@ -32,6 +33,7 @@ export const images: ImagesInterface = {
   profileImage: require('../assets/images/profilePicture.png'),
   wadideglaLogo: require('../assets/images/wadideglaLogo.png'),
   wadideglaBack: require('../assets/images/wadideglaBack.png'),
+  nodeLogo: require('../assets/images/nodejs.png'),
   linkedIn: LinkedIn,
   github: Github,
   email: Email,
