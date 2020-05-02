@@ -70,7 +70,7 @@ const ProjectsComponent = () => {
                       className={styles.readMoreText}
                       onClick={() => { alert() }}
                     >
-                      Read More -->
+                      View More -->
                     </p>
                   </div>
                 </div>

@@ -26,6 +26,12 @@
   border-radius: 2vw;
   text-align: center;
   padding: 1vw;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+      width: 60%;
+      padding: 5vw;
+      border-radius: 10vw;
+  }
 }
 
 .collaborateAction:hover {
@@ -35,4 +41,8 @@
 .actionText {
   font-weight: 700;
   font-size: 13px;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    font-size: 18px;
+  }
 }

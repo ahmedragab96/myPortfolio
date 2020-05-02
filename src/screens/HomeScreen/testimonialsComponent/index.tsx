@@ -9,6 +9,14 @@ const TestimonialsComponent: React.FC = () => {
   const {
     theme,
   } = useContext(ThemeContext);
+  const getNumberOfItems = () => {
+    console.log(window.innerWidth);
+    let numberOfItems = 2;
+    if (window.innerWidth < 770) {
+      numberOfItems = 1;
+    }
+    return numberOfItems;
+  }
   return (      
       <div
         className={styles.TestimonialsScetion}
@@ -33,7 +41,7 @@ const TestimonialsComponent: React.FC = () => {
           People I've worked with have said some nice things...   
         </p>
         <Carousel
-          itemsToShow={2}
+          itemsToShow={getNumberOfItems()}
           style={{
             margin: 30,
             paddingTop: 50,

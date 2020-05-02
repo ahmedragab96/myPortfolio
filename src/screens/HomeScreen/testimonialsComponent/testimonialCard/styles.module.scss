@@ -4,4 +4,8 @@
   border: 1px solid #F2F2F2;
   width: 30vw;
   border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    width: 100%;
+  }
 }
