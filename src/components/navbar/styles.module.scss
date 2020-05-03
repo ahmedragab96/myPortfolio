@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .navContainer {
   width: 100%;
   height: 15vh;
@@ -12,6 +14,12 @@
 
 .logoContainer {
   margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include phone {
+    margin-left: 20px;
+  }
 }
 
 .logo {
@@ -24,6 +32,9 @@
   margin-right: 40px;
   display: flex;
   align-items: center;
+  @include phone {
+    display: none!important;
+  }
 }
 
 .resumeText {
@@ -35,6 +46,9 @@
 .toggler {
   width: 40px;
   height: 25px;
+  @include phone {
+    margin-right: 20px;
+  }
 }
 
 .toggler:hover {
@@ -54,4 +68,13 @@
 
 .helloButton:hover {
   cursor: pointer;
+}
+
+.headerToggle{
+  @include pc {
+    display: none!important;
+  }
+  @include tablet {
+    display: none!important;
+  }
 }

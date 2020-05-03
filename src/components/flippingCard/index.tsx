@@ -10,19 +10,24 @@ export interface Props {
 }
 
 
-const FlipCard = (props: Props) => {
+const FlipCard =  (props: Props) => {
+
+  const calcVW = () => {
+    return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  }
+
   const getCardWidth = () => {
-    console.log(window.innerWidth);
+    console.log(calcVW());
     let cardWidth = '25%';
-    if (window.innerWidth < 770) {
+    if (calcVW() < 576) {
       cardWidth = '100%';
     }
     return cardWidth;
   }
   const getCardMargin = () => {
-    console.log(window.innerWidth);
+    console.log(calcVW());
     let cardMargin = '2%';
-    if (window.innerWidth < 770) {
+    if (calcVW() < 576) {
       cardMargin = '2% 0 2% 0';
     }
     return cardMargin;

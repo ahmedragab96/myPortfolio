@@ -1,0 +1,28 @@
+@import "../../global.scss";
+
+:root {
+  --sidenav-translate-x: -300px;
+}
+
+.navContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  top: 63px;
+  min-height: calc(100vh - 63px);
+  max-width: 300px;
+  width: 100vw;
+  z-index: 1000;
+  transition: transform 250ms ease-in-out;
+  transform: translateX(var(--sidenav-translate-x));
+  padding: 32px 0 0 5px;
+  @include pc {
+    --sidenav-translate-x: -300px;
+    padding-left: 0px;
+  }
+}
+.navBarContainer {
+  margin-top: 30px;
+}

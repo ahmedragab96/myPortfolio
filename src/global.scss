@@ -1,0 +1,21 @@
+$screen-phone: 576px;
+$screen-tablet: 768px;
+$screen-pc: 1030px;
+
+
+@mixin tablet {
+  @media (min-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: #{$screen-pc}) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: #{$screen-phone}) {
+    @content;
+  }
+}

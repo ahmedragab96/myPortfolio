@@ -4,8 +4,14 @@ import styles from './styles.module.scss';
 import { images } from '../../assets';
 import { lightTheme } from '../../theme/themes/light';
 import { darkTheme } from '../../theme/themes/dark';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
-const NavBar = () => {
+interface Props {
+  onNavClicked(): void;
+}
+
+const NavBar: React.FC<Props> = (props: Props) => {
   const {
     theme,
     setTheme,
@@ -20,11 +26,31 @@ const NavBar = () => {
       <div
         className={styles.logoContainer}
       >
-      <img
-        src={ theme === lightTheme ? images.lightLogo : images.darkLogo}
-        alt={'logo'}
-        className={styles.logo}
-      />
+        <div className={styles.headerToggle}>
+          <IconButton 
+            aria-label='Menu'
+            edge="start"
+            style={{
+              color: theme.palette.primary.value
+            }}
+            onClick={() => props.onNavClicked()}
+          >
+            <MenuIcon fontSize='large' />
+          </IconButton>
+        </div>
+        <img
+          src={ theme === lightTheme ? images.lightLogo : images.darkLogo}
+          alt={'logo'}
+          className={styles.logo}
+        />
+      </div>
+      <div className={styles.headerToggle}>
+        <img
+          src={theme === lightTheme ? images.lightToggler : images.darkToggler}
+          alt={'logo'}
+          className={styles.toggler}
+          onClick={() => setTheme(theme === lightTheme ? darkTheme : lightTheme)}
+        />
       </div>
       <div
         className={styles.rightSideContainer}
