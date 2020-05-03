@@ -21,6 +21,8 @@ interface ImagesInterface {
   reactLogo: string;
   mysqlLogo: string;
   mongoLogo: string;
+  testimonialBackGround: string;
+  quoteIcon: string;
   linkedIn: JSX.Element;
   github: JSX.Element;
   email: JSX.Element;
@@ -44,6 +46,8 @@ export const images: ImagesInterface = {
   reactLogo: require('../assets/images/react.png'),
   mysqlLogo: require('../assets/images/MySQL.png'),
   mongoLogo: require('../assets/images/mongo.png'),
+  testimonialBackGround: require('../assets/images/quotebackground.png'),
+  quoteIcon: require('../assets/images/quoteIcon.png'),
   linkedIn: LinkedIn,
   github: Github,
   email: Email,

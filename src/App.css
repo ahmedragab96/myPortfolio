@@ -3,3 +3,21 @@
   padding: 0;
   font-family: 'Inter';
 }
+
+.rec-dot {
+  background-color: #3BC2ED !important;
+  opacity: 0.5;
+  width: 7px !important;
+  height: 7px !important;
+  box-shadow: none !important;
+  margin: 4px 8px 0 8px !important;
+}
+
+.rec-dot_active {
+  background-color: #3BC2ED !important;
+  width: 14px !important;
+  height: 14px !important;
+  box-shadow: none !important;
+  opacity: 1;
+  margin: 0 !important;
+}

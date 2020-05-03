@@ -1,11 +1,45 @@
 .TestimonialsCardContainer{
-  height: 270px;
-  background-color: white;
+  height: 240px;
   border: 1px solid #F2F2F2;
-  width: 30vw;
+  width: 27vw;
   border-radius: 5px;
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     width: 100%;
   }
+}
+
+.cardPersonDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cardPersonSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nameContainer {
+  display: 'flex';
+  flex-direction: 'column';
+  margin-left: 20px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 13px;
 }
