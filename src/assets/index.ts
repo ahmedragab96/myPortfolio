@@ -23,6 +23,7 @@ interface ImagesInterface {
   mongoLogo: string;
   testimonialBackGround: string;
   quoteIcon: string;
+  resume: string;
   linkedIn: JSX.Element;
   github: JSX.Element;
   email: JSX.Element;
@@ -48,6 +49,7 @@ export const images: ImagesInterface = {
   mongoLogo: require('../assets/images/mongo.png'),
   testimonialBackGround: require('../assets/images/quotebackground.png'),
   quoteIcon: require('../assets/images/quoteIcon.png'),
+  resume: require('../assets/resume/AhmedRagab-CurriculumVitae.pdf'),
   linkedIn: LinkedIn,
   github: Github,
   email: Email,

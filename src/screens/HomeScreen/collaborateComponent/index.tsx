@@ -4,6 +4,13 @@ import styles from './styles.module.scss';
 import { images } from '../../../assets';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+const handleSendEmail = () => {
+  let element      = document.createElement("a");
+  element.href     = "mailto: hamadar1996@gmail.com?subject=Opportunity for collaboration";
+  element.click();
+}
+
+
 const CollaborateComponent: React.FC = () => {
   const {
     theme,
@@ -46,6 +53,7 @@ const CollaborateComponent: React.FC = () => {
           style={{
             color: theme.palette.background.value
           }}
+          onClick={handleSendEmail}
         >
           Start Conversation
         </p>

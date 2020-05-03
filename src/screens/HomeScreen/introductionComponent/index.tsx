@@ -15,7 +15,7 @@ const IntroductionComponent: React.FC = () => {
         backgroundColor: theme.palette.surface.contrast
       }}
     >
-      <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+      <ScrollAnimation animateIn="fadeInLeft" duration={2} animateOnce>
       <p
         className={styles.nameText}
         style={{
@@ -25,7 +25,7 @@ const IntroductionComponent: React.FC = () => {
         Hi, I’m Ragab. Nice to meet you.
       </p>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInRight" duration={2}>
+      <ScrollAnimation animateIn="fadeInRight" duration={2} animateOnce>
       <p
         className={styles.introText}
         style={{

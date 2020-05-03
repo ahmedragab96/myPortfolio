@@ -1,3 +1,5 @@
+@import '../../../global.scss';
+
 .collaborateSction {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,9 @@
   font-weight: 700;
   font-size: 25px;
   text-align: center;
+  @include phone {
+    margin: 30px 5px 20px 5px;
+  }
 }
 
 .collaborateDesc {

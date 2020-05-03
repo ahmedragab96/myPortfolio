@@ -10,7 +10,7 @@
   width: 7px !important;
   height: 7px !important;
   box-shadow: none !important;
-  margin: 4px 8px 0 8px !important;
+  /* margin: 4px 8px 0 8px !important; */
 }
 
 .rec-dot_active {
@@ -19,5 +19,5 @@
   height: 14px !important;
   box-shadow: none !important;
   opacity: 1;
-  margin: 0 !important;
+  margin: 1px !important;
 }

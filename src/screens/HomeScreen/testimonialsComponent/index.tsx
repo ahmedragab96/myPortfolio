@@ -9,10 +9,13 @@ const TestimonialsComponent: React.FC = () => {
   const {
     theme,
   } = useContext(ThemeContext);
+  const calcVW = () => {
+    return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  }
   const getNumberOfItems = () => {
     console.log(window.innerWidth);
     let numberOfItems = 2;
-    if (window.innerWidth < 770) {
+    if (calcVW() < 770) {
       numberOfItems = 1;
     }
     return numberOfItems;
@@ -42,12 +45,7 @@ const TestimonialsComponent: React.FC = () => {
         </p>
         <Carousel
           itemsToShow={getNumberOfItems()}
-          style={{
-            margin: 30,
-            paddingTop: 50,
-            paddingBottom: 50,
-            width: '80%'
-          }}
+          className={styles.carousalContainer}
           enableSwipe
           showArrows={false}
           itemPadding={[0,0,50,0]}

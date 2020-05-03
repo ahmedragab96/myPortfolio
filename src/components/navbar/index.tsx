@@ -11,6 +11,20 @@ interface Props {
   onNavClicked(): void;
 }
 
+const handleDownloadResume = () => {
+  let element      = document.createElement("a");
+  element.href     = images.resume;
+  element.download = `Ahmed Ragab-CurriculumVitae.pdf`;
+  element.click();
+}
+
+const handleSendEmail = () => {
+  let element      = document.createElement("a");
+  element.href     = "mailto: hamadar1996@gmail.com?subject=Say Hello";
+  element.click();
+}
+
+
 const NavBar: React.FC<Props> = (props: Props) => {
   const {
     theme,
@@ -57,6 +71,7 @@ const NavBar: React.FC<Props> = (props: Props) => {
       >
         <p
           className={styles.resumeText}
+          onClick={handleDownloadResume}
           style={{
             color: theme.palette.primary.value
           }}
@@ -73,6 +88,7 @@ const NavBar: React.FC<Props> = (props: Props) => {
             style={{
               color: theme.palette.secondary.contrast
             }}
+            onClick={handleSendEmail}
           >
             Say Hello
           </p>
