@@ -32,7 +32,16 @@ const IntroductionComponent: React.FC = () => {
           color: theme.palette.primary.value
         }}
       >
-        Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+        I'm a passionate software engineer, I love learning new skills every day, I don't like anything to stop me, I always say "No one is perfect if I lack a skill, I'll learn it in no time", I hope to find an interesting environment That will help me learn new things -not just in software- and level up my skills.
+
+        <p
+          style={{
+            marginTop: 5,
+            marginBottom: 5,
+          }}
+        >I'm a very open person to different cultures, I like watching movies from all over the world to try to understand different cultures, I hope to travel the world one day and learn new traditions and spread my own culture.</p>
+
+        I worked with many different programming languages: <b>C++, Python, Javascript </b>with different frameworks: <b>Node.js, ReactJs, React Native and Angular</b>, each language has it's role in helping me understand programming more and more and now I'm more focused on working with Javascript and it's frameworks.
       </p>
       </ScrollAnimation>
     </div>

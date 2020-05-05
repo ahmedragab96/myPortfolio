@@ -24,6 +24,8 @@ interface ImagesInterface {
   testimonialBackGround: string;
   quoteIcon: string;
   resume: string;
+  eventsLogo: string;
+  xploreEgyptLogo: string;
   linkedIn: JSX.Element;
   github: JSX.Element;
   email: JSX.Element;
@@ -50,6 +52,8 @@ export const images: ImagesInterface = {
   testimonialBackGround: require('../assets/images/quotebackground.png'),
   quoteIcon: require('../assets/images/quoteIcon.png'),
   resume: require('../assets/resume/AhmedRagab-CurriculumVitae.pdf'),
+  eventsLogo: require('../assets/images/eventsLogo.jpg'),
+  xploreEgyptLogo: require('../assets/images/xploreEgypt.jpg'),
   linkedIn: LinkedIn,
   github: Github,
   email: Email,

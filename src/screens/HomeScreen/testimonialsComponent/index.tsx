@@ -50,10 +50,30 @@ const TestimonialsComponent: React.FC = () => {
           showArrows={false}
           itemPadding={[0,0,50,0]}
         >
-          <TestimonialsCard/>
-          <TestimonialsCard/>
-          <TestimonialsCard/>
-          <TestimonialsCard/>
+          <TestimonialsCard
+            name='Momen Hesham'
+            title='Designer'
+            message="Ragab’s a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work."
+          />
+          <TestimonialsCard
+            name='Rami El sawy'
+            title='CEO'
+            message="Ahmed has excellent commitment to the tasks in hand, he also proved to be a very fast learner
+              as he moved from one technology to another. In addition to his technical skills, he has great
+              communication skills that proved essential to making sure everyone on his team was on the
+              same page.
+              Ahmed would be a tremendous asset for your company and has my highest recommendation."
+          />
+          <TestimonialsCard
+            name='Momen Hesham'
+            title='Designer'
+            message="Ragab’s a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work."
+          />
+          <TestimonialsCard
+            name='Momen Hesham'
+            title='Designer'
+            message="Ragab’s a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work."
+          />
       </Carousel>
       </div>
   );

@@ -8,23 +8,27 @@ export interface Project {
   image: string;
   name: string;
   description: string;
+  link?: string;
 }
 
 const projects: Project[] = [
   {
     name: 'Wadi Degla',
     image: images.wadideglaLogo,
-    description: 'It\'s website and mobile app for a famous sports club branches, lorem ipsem elefate dolres'
+    description: 'It\'s website and mobile app for a famous sports club branches, It\'s made with ReactJs, mobX , NodeJs, MSsQL and React Native.',
+    link: 'https://deglawyfamily.wadidegla.com/',
   },
   {
-    name: 'Wadi Degla',
-    image: images.wadideglaLogo,
-    description: 'It\'s website and mobile app for a famous sports club branches, lorem ipsem elefate dolres'
+    name: 'iEvent',
+    image: images.eventsLogo,
+    description: 'It\'s website for making and booking Events made with ReactJs and apollo for frontEnd with NodeJs, Graphql and Mongo for BackEnd.',
+    link: 'https://github.com/ahmedragab96/BookingApp-Backend',
   },
   {
-    name: 'Wadi Degla',
-    image: images.wadideglaLogo,
-    description: 'It\'s website and mobile app for a famous sports club branches, lorem ipsem elefate dolres'
+    name: 'Xplore Egypt',
+    image: images.xploreEgyptLogo,
+    description: 'A virtual assistant for tourists coming to Egypt, help them with recommending hotels, trips and restaurants.It\'s a Website and Mobile Application written in angular 6 and ionic for front end and NodeJS for Back end.',
+    link: 'https://github.com/ahmedragab96/Xplore_Egypt',
   }
 ];
 
@@ -58,7 +62,9 @@ const ProjectsComponent = () => {
                   >
                     <p
                       style={{
-                        marginBottom: 10
+                        marginBottom: 20,
+                        fontWeight: 'bold',
+                        fontSize: 18
                       }}
                     >
                       {project.name}
@@ -68,9 +74,9 @@ const ProjectsComponent = () => {
                     </p>
                     <p
                       className={styles.readMoreText}
-                      onClick={() => { alert() }}
+                      onClick={ project.link ?() => { window.open(project.link);} : () => {}}
                     >
-                      View More -->
+                      View More...
                     </p>
                   </div>
                 </div>

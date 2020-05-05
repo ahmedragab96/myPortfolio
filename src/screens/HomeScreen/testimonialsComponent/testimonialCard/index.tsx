@@ -5,7 +5,9 @@ import Carousel from 'react-elastic-carousel';
 import { images } from '../../../../assets';
 
 interface Props {
-
+  name: string;
+  title: string;
+  message: string;
 }
 
 
@@ -39,12 +41,12 @@ const TestimonialsCard: React.FC<Props> = (props: Props) => {
               <p
                 className={styles.name}
               >
-                Momen Hesham
+                {props.name}
               </p>
               <p
                 className={styles.title}
               >
-                Designer
+                {props.title}
               </p>
             </div>
           </div>
@@ -59,7 +61,7 @@ const TestimonialsCard: React.FC<Props> = (props: Props) => {
             />
         </div>
         <p>
-            Ragab’s a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work.
+            {props.message}
         </p>
       </div>
   );

@@ -5,6 +5,13 @@ import { images } from '../../assets';
 import { Animated } from 'react-animated-css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+const handleSendEmail = () => {
+  let element      = document.createElement("a");
+  element.href     = "mailto: hamadar1996@gmail.com?subject=Say Hello";
+  element.click();
+}
+
+
 const Footer: React.FC = () => {
   const {
     theme,
@@ -32,8 +39,6 @@ const Footer: React.FC = () => {
       </div>
       <ScrollAnimation
         animateIn="fadeInUp"
-        // animateOut="fadeInDown"
-        // animateOnce
       >
       <div
        className={styles.socialMediaContainer}
@@ -48,13 +53,22 @@ const Footer: React.FC = () => {
         <div
           className={styles.socialIconsContainer}
         >
-          <div>
+          <div
+            onClick={
+              () => window.open('https://www.linkedin.com/in/ahmed-ragab-shaban/', '_blank')
+            }
+            className={styles.socialLink}
+          >
             {images.linkedIn}
           </div>
           <div
             style={{
               marginTop: 5,
             }}
+            onClick={
+              () => window.open('https://github.com/ahmedragab96', '_blank')
+            }
+            className={styles.socialLink}
           >
             {images.github}
           </div>
@@ -66,9 +80,13 @@ const Footer: React.FC = () => {
             {images.twitter}
           </div>
           <div
-          style={{
-            marginTop: 5,
-          }}
+            style={{
+              marginTop: 5,
+            }}
+            onClick={
+              () => handleSendEmail()
+            }
+            className={styles.socialLink}
           >
             {images.email}
           </div>
