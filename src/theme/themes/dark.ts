@@ -26,13 +26,13 @@ export const darkTheme = new Theme({
           value: '#343236',
           contrast: 'white',
           disabledValue: '#141414',
-          disabledContrast: 'white',
+          disabledContrast: '#575757',
       },
       surface: {
           value: '#343236',
           contrast: '#343236',
           disabledValue: 'white',
-          disabledContrast: '#141414',
+          disabledContrast: '#343236',
       },
   },
 });

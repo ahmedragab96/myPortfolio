@@ -6,23 +6,31 @@ import ScrollAnimation from 'react-animate-on-scroll';
 interface Props {
   skillImage: string;
   animationDelay: number;
-  imageWidth: number;
+  stylesClass: any;
 }
 
 const SkillCard: React.FC<Props> = (props: Props) => {
+  const {
+    theme,
+  } = useContext(ThemeContext);
   return (
     <ScrollAnimation
       animateIn="fadeInUp"
       animateOut="fadeInDown"
       delay={props.animationDelay}
+      className={props.stylesClass}
     >
       <div
         className={styles.skillCardContainer}
+        style={{
+          backgroundColor: theme.palette.background.disabledContrast,
+          borderColor: theme.palette.surface.disabledContrast,
+        }}
       >
         <img
           alt='logo'
           src={props.skillImage}
-          width={props.imageWidth}
+          className={styles.skillImage}
         />
       </div>
     </ScrollAnimation>

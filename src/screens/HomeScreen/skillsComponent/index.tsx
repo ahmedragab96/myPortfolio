@@ -38,30 +38,21 @@ const SkillsComponent: React.FC = () => {
       >
         Here are a few recent design projects. Want to see more? Email me.
       </p>
-      <Carousel itemsToShow={6}
-        style={{
-          margin: 30,
-          paddingTop: 50,
-          paddingBottom: 50,
-          width: '80%'
-        }}
-        enableSwipe
-        showArrows={false}
-        pagination={false}
-        itemPadding={[0,0,50,0]}
+      <div
+        className={styles.items}
       >
         { 
           skillsImages.map((image: string, index: number) => {
             return (
               <SkillCard
                 skillImage={image}
-                imageWidth={100}
                 animationDelay={ 100 * (index + 1)}
+                stylesClass={styles.item}
               />
             );
           })
         }
-      </Carousel>
+      </div>
     </div>
   );
 }

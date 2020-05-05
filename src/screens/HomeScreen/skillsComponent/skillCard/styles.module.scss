@@ -1,10 +1,28 @@
+@import "../../../../global.scss";
+
 .skillCardContainer {
   height: 10vw;
   background-color: #F6F6F6;
-  border: 1px solid #F2F2F2;
+  border: 1px solid;
   width: 10vw;
-  border-radius: 5;
+  border-radius: 5px;
   justify-content: center;
   display: flex;
   align-items: center;
+
+  @include phone {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+.skillImage {
+  width: 7vw;
+  @include phone {
+    width: 14vw;
+  }
+}
+
+.item {
+  background-color: black;
 }

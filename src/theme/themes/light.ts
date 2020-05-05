@@ -26,13 +26,13 @@ export const lightTheme = new Theme({
           value: 'white',
           contrast: 'white',
           disabledValue: '#141414',
-          disabledContrast: 'white',
+          disabledContrast: '#F6F6F6',
       },
       surface: {
           value: '#CEF3FF',
           contrast: '#89E3FF',
           disabledValue: 'white',
-          disabledContrast: '#141414',
+          disabledContrast: '#F6F6F6',
       },
   },
 });
