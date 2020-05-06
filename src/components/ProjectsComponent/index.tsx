@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     name: 'Xplore Egypt',
     image: images.xploreEgyptLogo,
-    description: 'A virtual assistant for tourists coming to Egypt, help them with recommending hotels, trips and restaurants.It\'s a Website and Mobile Application written in angular 6 and ionic for front end and NodeJS for Back end.',
+    description: 'A virtual assistant for tourists coming to Egypt, help recommending hotels, trips and restaurants.It\'s a Website and Mobile Application written in angular 6 and ionic for front end and NodeJS for Back end.',
     link: 'https://github.com/ahmedragab96/Xplore_Egypt',
   }
 ];
@@ -69,7 +69,11 @@ const ProjectsComponent = () => {
                     >
                       {project.name}
                     </p>
-                    <p>
+                    <p
+                      style={{
+                        margin: '0px 0px 5px 0px'
+                      }}
+                    >
                       {project.description}
                     </p>
                     <p
