@@ -37,9 +37,6 @@ const Footer: React.FC = () => {
           Living, learning, & leveling up one day at a time.
         </p>
       </div>
-      <ScrollAnimation
-        animateIn="fadeInUp"
-      >
       <div
        className={styles.socialMediaContainer}
       >
@@ -99,7 +96,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-        </ScrollAnimation>
     </div>
   );
 }
