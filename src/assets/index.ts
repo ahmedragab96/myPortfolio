@@ -26,6 +26,7 @@ interface ImagesInterface {
   resume: string;
   eventsLogo: string;
   xploreEgyptLogo: string;
+  chatAppLogo: string,
   linkedIn: JSX.Element;
   github: JSX.Element;
   email: JSX.Element;
@@ -54,6 +55,7 @@ export const images: ImagesInterface = {
   resume: require('../assets/resume/AhmedRagab-CurriculumVitae.pdf'),
   eventsLogo: require('../assets/images/eventsLogo.jpg'),
   xploreEgyptLogo: require('../assets/images/xploreEgypt.jpg'),
+  chatAppLogo: require('../assets/images/chatIcon.png'),
   linkedIn: LinkedIn,
   github: Github,
   email: Email,

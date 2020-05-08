@@ -29,6 +29,12 @@ const projects: Project[] = [
     image: images.xploreEgyptLogo,
     description: 'A virtual assistant for tourists coming to Egypt, help recommending hotels, trips and restaurants.It\'s a Website and Mobile Application written in angular 6 and ionic for front end and NodeJS for Back end.',
     link: 'https://github.com/ahmedragab96/Xplore_Egypt',
+  },
+  {
+    name: 'Chat App',
+    image: images.chatAppLogo,
+    description: 'A Real time chat app with sending images and videos, written in ReactJs, Redux, NodeJs with socket.io and AWS S3 for files',
+    link: 'https://chat-app-5ac4a.web.app/',
   }
 ];
 
