@@ -64,16 +64,6 @@ const TestimonialsComponent: React.FC = () => {
               same page.
               Ahmed would be a tremendous asset for your company and has my highest recommendation."
           />
-          <TestimonialsCard
-            name='Momen Hesham'
-            title='Designer'
-            message="Ragab’s a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work."
-          />
-          <TestimonialsCard
-            name='Momen Hesham'
-            title='Designer'
-            message="Ragab’s a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work."
-          />
       </Carousel>
       </div>
   );
