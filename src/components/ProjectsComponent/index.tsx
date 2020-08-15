@@ -33,8 +33,14 @@ const projects: Project[] = [
   {
     name: 'Chat App',
     image: images.chatAppLogo,
-    description: 'A Real time chat app with sending images and videos, written in ReactJs, Redux, NodeJs with socket.io and AWS S3 for files',
+    description: 'A Real time chat app with sending images and videos, written in ReactJs, Redux, NodeJs with socket.io and AWS S3 for files.',
     link: 'https://chat-app-5ac4a.web.app/',
+  },
+  {
+    name: 'Panademic Free',
+    image: images.panademicfree,
+    description: 'A Progressive web app that allows user to add a link to any panademic free resources that gets available any time.',
+    link: 'https://pandemicfree.tech/',
   }
 ];
 

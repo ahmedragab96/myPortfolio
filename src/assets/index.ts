@@ -33,6 +33,7 @@ interface ImagesInterface {
   twitter: JSX.Element;
   pintrest: JSX.Element;
   credits: JSX.Element;
+  panademicfree: string;
 }
 
 export const images: ImagesInterface = {
@@ -52,10 +53,11 @@ export const images: ImagesInterface = {
   mongoLogo: require('../assets/images/mongo.png'),
   testimonialBackGround: require('../assets/images/quotebackground.png'),
   quoteIcon: require('../assets/images/quoteIcon.png'),
-  resume: require('../assets/resume/AhmedRagab-CurriculumVitae.pdf'),
+  resume: require('../assets/resume/Ahmed_Ragab_CV.pdf'),
   eventsLogo: require('../assets/images/eventsLogo.jpg'),
   xploreEgyptLogo: require('../assets/images/xploreEgypt.jpg'),
   chatAppLogo: require('../assets/images/chatIcon.png'),
+  panademicfree: require('../assets/images/panademicfree.png'),
   linkedIn: LinkedIn,
   github: Github,
   email: Email,
